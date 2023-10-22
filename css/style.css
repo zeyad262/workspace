@@ -5,7 +5,7 @@ html, body{
     overflow-x: hidden;
 }
 .body{
-    font-family: "Bai-Jamjuree", sans-serif;
+    font-family: 'Bai Jamjuree', sans-serif; 
     
 }
 /* start componants */
@@ -26,14 +26,9 @@ html, body{
 /* end componants */
 .heading{   
     padding-bottom: var(--section-padding);
-    position: relative;
+    background-image: url(./images/bg-header-desktop.png);
 }
-.heading .logo{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translateX(-50%);
-}
+
 @media(max-width:767px){
     .main-heading .btns{
         display:grid ;
@@ -68,7 +63,6 @@ html, body{
 }
 @media(max-width:767px){
     .computer .comp-holder{
-        height: 640px;
         width: auto;
         margin: auto;
     }
