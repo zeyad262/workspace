@@ -126,16 +126,3 @@ html, body{
 .foot ul{
     text-align: center;
 }
-@media(max-width:767px){
-    .foot .row{
-        display: grid;
-        justify-content: center;
-    }
-    .foot ul {
-        text-align: center;
-        margin-left: 100px;
-    }
-    .foot img{
-        margin-left: 100px;
-    }
-}
