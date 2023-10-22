@@ -25,11 +25,14 @@ html, body{
 
 /* end componants */
 .heading{
-    width: 100%;
-    background-image: url(./images/bg-header-desktop.png);
-    background-size: cover;
-    padding-top: var(--section-padding);
+    position: relative;
     padding-bottom: var(--section-padding);
+}
+.heading .logo{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 @media(max-width:767px){
     .main-heading .btns{
@@ -54,18 +57,24 @@ html, body{
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
-.computer .image{
+.comp-holder{
+    position: relative;
+}
+.computer img{
+    position: absolute;
     left: -100px;
-    min-height: 100%;
+   width: auto;
+   height: auto;
 }
 @media(max-width:767px){
     .computer .comp-holder{
         height: 640px;
-        width: 100%;
+        width: auto;
+        margin: auto;
     }
     .computer .image {
-        left: 0;
-        width: inherit;
+        position: static;
+        width: -webkit-fill-available;
     }
     
 }
