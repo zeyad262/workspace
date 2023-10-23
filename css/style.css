@@ -27,7 +27,11 @@ html, body{
 .heading{   
     padding-bottom: var(--section-padding);
     background-image: url(/images/bg-header-desktop.png);
+    background-size: cover ;
 }
+  .heading img{
+    object-fit: contain !important; 
+  }
 
 @media(max-width:767px){
     .main-heading .btns{
